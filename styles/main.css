@@ -1,0 +1,180 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.content-wrapper { 
+  display: grid; 
+  grid-template-columns: repeat(12, 1fr); 
+  grid-auto-rows: 1vh; 
+  grid-gap: 0;
+} 
+
+.navbar {
+  font-size: 1.6rem;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: grey;
+  grid-column-start: 1;
+  grid-column-end: 13;
+  grid-row-start: 1;
+  grid-row-end: 8;
+  background-image: linear-gradient(to right, white , green);
+  opacity: 0.9;
+}
+
+.navbar-logo {
+  align-self: center;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  border-right: 1px solid black;
+}
+
+.navbar-links {
+  width: 30%;
+  height: 100%;
+  padding-right: 10rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  align-self: center;
+}
+
+.navbar-links a {
+  color: aliceblue;
+  text-decoration: none;
+  transition: 0.2s ease-in-out;
+}
+
+.navbar-links a:hover {
+  transform: scale(1.2);
+}
+
+/* SHOWCASE */
+
+.show-case {
+  grid-column-start: 1;
+  grid-column-end: 13;
+  grid-row-start: 8;
+  grid-row-end: 101;
+  position: relative;
+  background-image: url(../img/show.jpeg);
+  background-size: cover;
+  filter: grayscale(100%);
+  transition: .5s ease-in-out;
+}
+
+.show-case:hover {
+  filter: grayscale(50%);
+}
+
+.show-case-message {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 2px solid white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5rem;
+  color: black;
+}
+
+.show-case-message h1 {
+  padding-bottom: 3rem;
+  font-size: 3.5rem;
+  text-align: center;
+}
+
+.show-case-message p {
+  font-size: 2.5rem;
+}
+
+/* ABOUT SECTION */
+
+.about-container {
+  grid-column-start: 1;
+  grid-column-end: 13;
+  grid-row-start: 101;
+  grid-row-end: 201;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-container h2 {
+  padding: 4rem;
+  font-size: 3.5rem;
+}
+
+.about-text {
+  padding: 0 10rem 0 10rem;
+  font-size: 2rem;
+} 
+
+.about-cards-container {
+  width: 90%;
+  height: auto;
+  display: flex;
+  justify-content: space-around;
+  padding: 8rem 5rem 2rem;
+}
+
+.about-card {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  box-shadow: 5px 10px 10px #888888;
+  width: 25%;
+  height: auto;
+  transition: 0.3s ease-in-out;
+}
+
+.about-card:hover {
+  transform: scale(1.05);
+  box-shadow: 5px 10px 10px #888888;
+}
+
+.about-card-image_1 {
+  height: 25rem;
+  background-image: url(../img/visit.jpg);
+  background-size: cover;
+}
+
+.about-card-image_2 {
+  height: 25rem;
+  background-image: url(../img/champion.jpg);
+  background-size: cover;
+}
+
+.about-card-image_3 {
+  height: 25rem;
+  background-image: url(../img/signup.jpg);
+  background-size: cover;
+}
+
+.about-card h3 {
+  padding: 2rem;
+  font-size: 1.6rem;
+}
+
+.about-card h3 {
+  padding: 2rem;
+  font-size: 2rem;
+}
+
+.about-card-text-container {
+  font-size: 1.4rem;
+  padding: 0 3rem 3rem;
+}
