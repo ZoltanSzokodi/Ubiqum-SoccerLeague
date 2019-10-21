@@ -17,18 +17,24 @@ html {
 } 
 
 .navbar {
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%;
+  height: 7vh;
+  grid-column-start: 1;
+  grid-column-end: 13;
+  /* grid-row-start: 1;
+  grid-row-end: 8; */
   font-size: 1.6rem;
   display: flex;
   flex-wrap: nowrap;
   flex-direction: row;
   justify-content: space-between;
   background-color: grey;
-  grid-column-start: 1;
-  grid-column-end: 13;
-  grid-row-start: 1;
-  grid-row-end: 8;
   background-image: linear-gradient(to right, white , green);
   opacity: 0.9;
+  box-shadow: 5px 5px 5px black;
+  z-index: 10;
 }
 
 .navbar-logo {
@@ -64,7 +70,7 @@ html {
 .show-case {
   grid-column-start: 1;
   grid-column-end: 13;
-  grid-row-start: 8;
+  grid-row-start: 1;
   grid-row-end: 101;
   position: relative;
   background-image: url(../img/show.jpeg);
@@ -106,8 +112,8 @@ html {
   grid-column-start: 1;
   grid-column-end: 13;
   grid-row-start: 101;
-  grid-row-end: 201;
-  background-color: white;
+  grid-row-end: 225;
+  background-color: #ecf0f1;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -139,10 +145,11 @@ html {
   width: 25%;
   height: auto;
   transition: 0.3s ease-in-out;
+  background-color: white;
 }
 
 .about-card:hover {
-  transform: scale(1.05);
+  transform: scale(1.02);
   box-shadow: 5px 10px 10px #888888;
 }
 
@@ -177,4 +184,42 @@ html {
 .about-card-text-container {
   font-size: 1.4rem;
   padding: 0 3rem 3rem;
+}
+
+/* CONTACT SECTION */
+
+.contact-container {
+  grid-column-start: 1;
+  grid-column-end: 13;
+  grid-row-start: 225;
+  grid-row-end: 281;
+  background-color: cadetblue;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.contact-container h2 {
+  padding: 4rem;
+  font-size: 3.5rem;
+}
+
+.contact-details-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.contact-details-list {
+  font-size: 1.6rem;
+}
+
+.contact-details-list li {
+  list-style: none;
+}
+
+.contact-social-media {
+  font-size: 7rem;
 }
