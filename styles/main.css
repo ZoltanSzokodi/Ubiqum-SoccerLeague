@@ -20,7 +20,7 @@ html {
   position: fixed; /* Set the navbar to fixed position */
   top: 0; /* Position the navbar at the top of the page */
   width: 100%;
-  height: 7vh;
+  height: 8vh;
   grid-column-start: 1;
   grid-column-end: 13;
   /* grid-row-start: 1;
@@ -31,17 +31,38 @@ html {
   flex-direction: row;
   justify-content: space-between;
   background-color: grey;
-  background-image: linear-gradient(to right, white , green);
+  /* background-image: linear-gradient(to right, white , #8C8C8C); */
+  background-color: #ffffff;
   opacity: 0.9;
   /* box-shadow: 5px 5px 5px black; */
   z-index: 10;
 }
 
 .navbar-logo {
+  display: flex;
+  align-items: center;
   align-self: center;
   padding-left: 2rem;
   padding-right: 2rem;
+  font-family: 'Lobster', cursive;
+}
+
+.navbar-logo p {
+  font-size: 2rem;
+  font-family: inherit;
+  margin-right: 1.5rem;
+}
+
+.navbar-logo i {
+  font-size: 2rem;
+}
+
+.navbar-logo span {
+  padding-right: 1.5rem;
+  margin: 1.5rem;
   border-right: 1px solid black;
+  font-weight: bold;
+  font-size: 2rem;
 }
 
 .navbar-links {
@@ -67,7 +88,7 @@ html {
 
 /* SHOWCASE */
 
-.show-case {
+.showcase {
   grid-column-start: 1;
   grid-column-end: 13;
   grid-row-start: 1;
@@ -75,37 +96,70 @@ html {
   position: relative;
   background-image: url(../img/show.jpeg);
   background-size: cover;
-  filter: grayscale(100%);
+  /* filter: grayscale(70%); */
+  filter: contrast(100%);
   transition: .5s ease-in-out;
 }
 
-.show-case:hover {
-  filter: grayscale(50%);
+.showcase:hover {
+  /* filter: grayscale(20%); */
+  filter: contrast(130%);
 }
 
-.show-case-message {
+.showcase-image {
   position: absolute;
-  top: 20%;
-  left: 50%;
-  transform: translateX(-50%);
-  border: 2px solid white;
+  top: 15%;
+  left: 3%;
+  height: 20rem;
+}
+
+.showcase-image img {
+  height: 100%;
+}
+
+.showcase-title {
+  position: absolute;
+  top: 25%;
+  left: 18%;
+  width: 100rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 5rem;
-  color: black;
-  background-color: aliceblue;
+  padding: 3.5rem;
+  color: white;
+  background-color: #0D0D0D;
   opacity: 0.7;
+  transform: rotate(-5deg);
 }
 
-.show-case-message h1 {
-  padding-bottom: 3rem;
-  font-size: 3.5rem;
+.showcase-title h1 {
+  font-family: 'Luckiest Guy', cursive;
+  letter-spacing: .5rem;
+  line-height: 4.5rem;
+  font-size: 4rem;
   text-align: center;
 }
 
-.show-case-message p {
-  font-size: 2.5rem;
+.showcase-quote {
+  position: absolute;
+  top: 45%;
+  left: 22%;
+  padding: 3rem;
+  width: 60rem;
+  font-family: 'Montserrat', sans-serif;
+  font-style: italic;
+  font-size: 2rem;
+  color: #404040;
+  background-color: white;
+  opacity: 0.9;
+  transform: rotate(-1deg);
+  border-radius: 10px;
+}
+
+.showcase-quote span {
+  font-weight: bold;
+  display: block;
+  padding-top: 2rem;
 }
 
 /* ABOUT SECTION */
