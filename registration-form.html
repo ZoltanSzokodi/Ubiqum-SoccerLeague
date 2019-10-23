@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>NYSL | Registration</title>
+
+  <link rel='icon' href='./img/favicon.png' type='image/x-icon'>
+  <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles/registration-form.css">
+
+</head>
+
+<body>
+  <div class="content-wrapper">
+    <div class="form-container">
+      <div class="form-title">
+        Registration Form
+      </div>
+      <form action="#">
+
+        <div class="form-credentials">
+          <div class="form-credentials-left">
+            <div>
+              Player’s First Name:
+              <input class="form-credentials-text" type="text" name="first name" required>
+            </div>
+
+            <div>
+              Last Name:
+              <input class="form-credentials-text" type="text" name="last name" required>
+            </div>
+
+            <div>
+              Street Address:
+              <input class="form-credentials-text" type="text" name="adress">
+            </div>
+
+            <div>
+              City:
+              <input class="form-credentials-text" type="text" name="city">
+            </div>
+
+            <div>
+              Zip Code:
+              <input class="form-credentials-text" type="text" name="zip code">
+            </div>
+
+
+            <div>
+              Birth Date (dd/mm/yyyy):
+              <input class="form-credentials-date" type="date" name="birth date">
+            </div>
+
+            <div class="form-credentials_gender">
+              Gender:
+              <input class="form-credentials-radio" type="radio" name="gender" value="Female">Female
+              <input class="form-credentials-radio" type="radio" name="gender" value="Male">Male
+            </div>
+          </div>
+
+          <div class="form-credentials-right">
+
+            <div>
+              Parent/Guardian:
+              <input class="form-credentials-text" type="text" name="parent">
+            </div>
+
+            <div>
+              Contact Phone:
+              <input class="form-credentials-text" type="tel" name="phone">
+            </div>
+
+            <div>
+              Contact Email:
+              <input class="form-credentials-text" type="email" name="email">
+            </div>
+
+            <div>
+              Parent/Guardian Signature:
+              <input class="form-credentials-text" type="text" name="signature">
+            </div>
+
+            <div>
+              Date:
+              <input class="form-credentials-date" type="date" name="parent">
+            </div>
+
+            <div>
+              Grade:
+              <input class="form-credentials-radio" type="radio" name="grade" value="Preschool">Pre-School
+              <input class="form-credentials-radio" type="radio" name="grade" value="second"> 2<sup>nd</sup>
+              <input class="form-credentials-radio" type="radio" name="grade" value="third"> 3<sup>rd</sup>
+              <input class="form-credentials-radio" type="radio" name="grade" value="fourth"> 4<sup>th</sup>
+              <input class="form-credentials-radio" type="radio" name="grade" value="fifth"> 5<sup>th</sup>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="form-submit">
+          <input type="submit" value="submit">
+        </div>
+
+      </form>
+
+    </div>
+
+    <div class="back-btn-container">
+      <a href="./main.html" class="button-back">
+        <p>&#11013; Go Back</p>
+      </a>
+    </div>
+  </div>
+</body>
+
+</html>

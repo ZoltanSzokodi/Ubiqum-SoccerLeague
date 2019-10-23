@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.content-wrapper {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-auto-rows: 1vh;
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+}
+
+/* FORM */
+
+.form-container {
+  grid-column-start: 3;
+  grid-column-end: 11;
+  grid-row-start: 10;
+  grid-row-end: 81;
+  box-shadow: 5px 10px 10px #051937;
+  background-color: white;
+  font-family: inherit;
+  font-size: 1.6rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Lobster', cursive;
+  font-size: 3.5rem;
+  font-weight: bold;
+  height: 8rem;
+  color: white;
+  background-color: #008793;
+}
+
+.form-credentials {
+  display: flex;
+}
+
+.form-credentials-left, .form-credentials-right {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  background-color: khaki;
+}
+
+.form-credentials-left div, .form-credentials-right div {
+  padding: 1rem;
+}
+
+.form-credentials-text,
+.form-credentials-date {
+  float: right;
+  width: 50%;
+  height: 3rem;
+}
+
+.form-credentials-radio {
+  margin-left: 2rem;
+}
+
+/* BACK BUTTON */
+
+.back-btn-container {
+  grid-column-start: 1;
+  grid-column-end: 13;
+  grid-row-start: 86;
+  grid-row-end: 96;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button-back {
+  width: 20rem;
+  height: 5rem;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3rem;
+  background-color: #00bf72;
+  text-decoration: none;
+  color: white;
+  font-size: 2rem;
+  font-family: inherit;
+  font-weight: bold;
+  box-shadow: 5px 10px 10px #051937;
+  transition: 0.2s ease-in-out;
+}
+
+.button-back:hover {
+  transform: scale(1.04);
+  box-shadow: 5px 10px 15px #051937;
+  background-color: #008793;
+}

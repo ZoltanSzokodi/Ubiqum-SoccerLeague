@@ -400,6 +400,13 @@ html {
   height: auto;
   transition: 0.3s ease-in-out;
   background-color: white;
+  border-radius: .2rem;
+}
+
+/* For the images inside the cards */
+.about-card > div {
+  border-top-right-radius: .2rem;
+  border-top-left-radius: .2rem;
 }
 
 .about-card:hover {
