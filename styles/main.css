@@ -265,14 +265,14 @@ html {
   grid-column-start: 1;
   grid-column-end: 13;
   grid-row-start: 1;
-  grid-row-end: 101;
+  grid-row-end: 121;
   position: relative;
   background-image: url(../img/design2_image1.jpg);
   background-size: cover;
   /* filter: grayscale(70%); */
   filter: contrast(100%);
   transition: .5s ease-in-out;
-  clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 105vh, 0 100%);
 }
 
 .showcase:hover {
@@ -346,24 +346,72 @@ html {
 .about-container {
   grid-column-start: 1;
   grid-column-end: 13;
-  grid-row-start: 86;
-  grid-row-end: 250;
+  grid-row-start: 106;
+  grid-row-end: 300;
   background-color: #ecf0f1;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.about-container h2 {
-  margin-top: 5rem;
-  padding: 8rem;
-  font-size: 3.5rem;
+.about-title {
+  margin-top: 10rem;
+  align-items: center;
+  padding: 3.5rem;
+  color: white;
+  background-color: #0D0D0D;
+  opacity: 0.7;
+  transform: rotate(-2deg);
 }
 
-.about-text {
-  padding: 0 10rem 0 10rem;
-  font-size: 2rem;
-} 
+.about-title h2 {
+  font-family: 'Bangers', cursive;
+  letter-spacing: .7rem;
+  line-height: 5.5rem;
+  font-size: 5rem;
+  text-align: center;
+}
+
+.about-text-container {
+  position: relative;
+  height: 30rem;
+  width: 100%;
+  transform: rotate(-3deg);
+  margin-top: 3rem;
+}
+ 
+ .about-text_typography {
+   position: absolute;
+   font-size: 1.6rem;
+   width: 25%;
+   padding: 0 3rem 3rem;
+   transform: rotate(3deg);
+   box-shadow: 5px 10px 10px #888888;
+   background-color: white;
+}
+
+.about-text_typography h3 {
+  background-color:#0D0D0D;
+  color: white;
+  padding: 1rem;
+  display: inline-block;
+  transform: translateY(-2rem);
+}
+
+.about-text_vision {
+  top: 25%;
+  left: 5%;
+}
+
+.about-text_mission {
+  top: 20%;
+  left: 35%;
+}
+
+.about-text_info {
+  top: 15%;
+  left: 65%;
+}
 
 .about-cards-container {
   width: 90%;
@@ -457,8 +505,8 @@ html {
   clip-path: polygon(0% 12%, 100% 0%, 100% 0%, 100% 100%, 0% 100%, 0% 75%);
   grid-column-start: 1;
   grid-column-end: 13;
-  grid-row-start: 235;
-  grid-row-end: 356;
+  grid-row-start: 301;
+  grid-row-end: 451;
   background-color: #75BF80;
   display: flex;
   flex-direction: column;
