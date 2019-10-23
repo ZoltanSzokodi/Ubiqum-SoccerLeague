@@ -304,7 +304,7 @@ html {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 3.5rem;
+  padding: 2.5rem;
   color: white;
   background-color: #0D0D0D;
   opacity: 0.7;
@@ -321,7 +321,7 @@ html {
 
 .showcase-quote {
   position: absolute;
-  top: 50%;
+  top: 47%;
   left: 26%;
   padding: 3rem;
   width: 60rem;
@@ -347,7 +347,7 @@ html {
   grid-column-start: 1;
   grid-column-end: 13;
   grid-row-start: 106;
-  grid-row-end: 300;
+  grid-row-end: 291;
   background-color: #ecf0f1;
   display: flex;
   flex-direction: column;
@@ -357,7 +357,7 @@ html {
 .about-title {
   margin-top: 10rem;
   align-items: center;
-  padding: 3.5rem;
+  padding: 2.5rem;
   color: white;
   background-color: #0D0D0D;
   opacity: 0.7;
@@ -385,6 +385,7 @@ html {
    font-size: 1.6rem;
    width: 25%;
    padding: 0 3rem 3rem;
+   margin-left: 3rem;
    transform: rotate(3deg);
    box-shadow: 5px 10px 10px #888888;
    background-color: white;
@@ -502,24 +503,38 @@ html {
 /* CONTACT SECTION */
 
 .contact-container {
-  clip-path: polygon(0% 12%, 100% 0%, 100% 0%, 100% 100%, 0% 100%, 0% 75%);
   grid-column-start: 1;
   grid-column-end: 13;
-  grid-row-start: 301;
-  grid-row-end: 451;
+  grid-row-start: 271;
+  grid-row-end: 396;
   background-color: #75BF80;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+  clip-path: polygon(0% 12%, 100% 0%, 100% 0%, 100% 100%, 0% 100%, 0% 75%);
 }
 
-.contact-container h2 {
-  margin: 8rem;
-  font-size: 3.5rem;
+.contact-title {
+  margin-top: 10rem;
+  align-items: center;
+  padding: 2.5rem;
+  color: white;
+  background-color: #0D0D0D;
+  opacity: 0.7;
+  transform: rotate(-2deg);
+}
+
+.contact-title h2 {
+  font-family: 'Bangers', cursive;
+  letter-spacing: .7rem;
+  line-height: 5.5rem;
+  font-size: 5rem;
+  text-align: center;
 }
 
  .contact-details{
+   margin-top: 2rem;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -634,5 +649,6 @@ html {
 }
 
 .contact-social-media {
+  margin-top: 2rem;
   font-size: 3rem;
-} */
+} 
