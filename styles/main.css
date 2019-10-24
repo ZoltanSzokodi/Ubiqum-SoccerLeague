@@ -7,6 +7,13 @@
 
 html {
   font-size: 62.5%;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 0px;  /* Remove scrollbar space */
+  background: transparent;  /* Optional: just make scrollbar invisible */
 }
 
 .content-wrapper { 
@@ -235,16 +242,14 @@ html {
   grid-row-start: 1;
   grid-row-end: 121;
   position: relative;
-  background-image: url(../img/design2_image1.jpg);
+  background-image: url(../img/showcase.jpg);
   background-size: cover;
-  /* filter: grayscale(70%); */
   filter: contrast(100%);
   transition: .5s ease-in-out;
   clip-path: polygon(0 0, 100% 0, 100% 105vh, 0 100%);
 }
 
 .showcase:hover {
-  /* filter: grayscale(20%); */
   filter: contrast(130%);
 }
 
@@ -268,7 +273,7 @@ html {
   position: absolute;
   top: 28%;
   left: 22%;
-  width: 80rem;
+  width: 100rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -323,7 +328,7 @@ html {
 }
 
 .about-title {
-  margin-top: 10rem;
+  margin-top: 6rem;
   align-items: center;
   padding: 2.5rem;
   background-color: #0D0D0D;
@@ -416,21 +421,21 @@ html {
 
 .about-card-image_1 {
   height: 25rem;
-  background-image: url(../img/visit.jpg);
+  background-image: url(../img/Youth-Soccer.jpg);
   background-size: cover;
   filter: opacity(80%);
 }
 
 .about-card-image_2 {
   height: 25rem;
-  background-image: url(../img/champion.jpg);
+  background-image: url(../img/rules.jpg);
   background-size: cover;
   filter: opacity(80%);
 }
 
 .about-card-image_3 {
   height: 25rem;
-  background-image: url(../img/signup.jpg);
+  background-image: url(../img/register.jpg);
   background-size: cover;
   filter: opacity(80%);
 }
@@ -480,8 +485,8 @@ html {
 .contact-container {
   grid-column-start: 1;
   grid-column-end: 13;
-  grid-row-start: 271;
-  grid-row-end: 396;
+  grid-row-start: 261;
+  grid-row-end: 386;
   background-image: linear-gradient(to right bottom, #051937, #004d7a, #008793, #00bf72, #a8eb12);
   display: flex;
   flex-direction: column;
@@ -491,7 +496,7 @@ html {
 }
 
 .contact-title {
-  margin-top: 10rem;
+  margin-top: 8rem;
   align-items: center;
   padding: 2.5rem;
   color: white;

@@ -14,7 +14,7 @@ html {
   grid-template-columns: repeat(12, 1fr);
   grid-auto-rows: 1vh;
   width: 100%;
-  height: 100vh;
+  height: 370vh;
   background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
 }
 
@@ -65,13 +65,85 @@ html {
   vertical-align: center;
 }
 
+/* LOCATIONS */
+
+.location-title {
+  grid-column-start: 5;
+  grid-column-end: 9;
+  grid-row-start: 90;
+  grid-row-end: 104;
+  align-items: center;
+  padding: 2.5rem;
+  background-color: #0D0D0D;
+  opacity: 0.9;
+  transform: rotate(-2deg);
+  color: white;
+}
+
+.location-title h2 {
+  font-family: 'Bangers', cursive;
+  letter-spacing: .7rem;
+  line-height: 5.5rem;
+  font-size: 5rem;
+  text-align: center;
+}
+
+.location {
+  position: relative;
+  grid-column-start: 4;
+  grid-column-end: 10;
+  height: 100%;
+  width: 100%;
+  box-shadow: 5px 10px 10px #051937;
+}
+
+.location h3 {
+  position: absolute;
+  background-color:#0D0D0D;
+  color: white;
+  padding: 1rem;
+  display: inline-block;
+  transform: translate(2rem, -2rem);
+  font-size: 1.6rem;
+}
+
+.location-1 {
+  grid-row-start: 114;
+  grid-row-end: 145;
+}
+
+.location-2 {
+  grid-row-start: 156;
+  grid-row-end: 186;
+}
+
+.location-3 {
+  grid-row-start: 196;
+  grid-row-end: 226;
+}
+
+.location-4 {
+  grid-row-start: 236;
+  grid-row-end: 266;
+}
+
+.location-5 {
+  grid-row-start: 276;
+  grid-row-end: 306;
+}
+
+.location-6 {
+  grid-row-start: 316;
+  grid-row-end: 346;
+}
+
 /* BACK BUTTON */
 
 .back-btn-container {
   grid-column-start: 1;
   grid-column-end: 13;
-  grid-row-start: 86;
-  grid-row-end: 96;
+  grid-row-start: 350;
+  grid-row-end: 360;
   display: flex;
   justify-content: center;
   align-items: center;
