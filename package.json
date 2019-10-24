@@ -1,0 +1,22 @@
+{
+  "name": "nysl",
+  "version": "1.0.0",
+  "description": "ubiqum no1 project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rupertdiekatze/Ubiqum-SoccerLeague.git"
+  },
+  "author": "Zoltan Szokodi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rupertdiekatze/Ubiqum-SoccerLeague/issues"
+  },
+  "homepage": "https://github.com/rupertdiekatze/Ubiqum-SoccerLeague#readme",
+  "devDependencies": {
+    "node-sass": "^4.13.0"
+  }
+}

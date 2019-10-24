@@ -114,12 +114,11 @@ html {
   overflow: scroll;
   overflow-x: hidden;
   scroll-behavior: auto;
-  background-color: #f3f3f3;
+  background-color: #ECE6DD;
   color: black;
   padding: 3rem;
   font-size: 1.6rem;
   box-shadow: 4px 4px 10px black;
-  opacity: .9;
 }
 
 .rule-box li {
