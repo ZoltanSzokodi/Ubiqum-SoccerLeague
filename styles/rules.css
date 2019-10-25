@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 html {
@@ -10,8 +10,8 @@ html {
 }
 
 ::-webkit-scrollbar {
-  width: 0px;  /* Remove scrollbar space */
-  background: transparent;  /* Optional: just make scrollbar invisible */
+  width: 0px; /* Remove scrollbar space */
+  background: transparent; /* Optional: just make scrollbar invisible */
 }
 
 .content-wrapper {
@@ -27,7 +27,7 @@ html {
   grid-column-start: 3;
   grid-column-end: 11;
   grid-row-start: 10;
-  grid-row-end: 360;
+  grid-row-end: 365;
   position: relative;
   box-shadow: 5px 10px 10px #051937;
   background-image: linear-gradient(to right top, #ceab86, cornsilk, #ba8956);
@@ -37,7 +37,7 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: 'Lobster', cursive;
+  font-family: "Lobster", cursive;
   font-size: 3.5rem;
   font-weight: bold;
   height: 3%;
@@ -114,7 +114,7 @@ html {
   overflow: scroll;
   overflow-x: hidden;
   scroll-behavior: auto;
-  background-color: #ECE6DD;
+  background-color: #ece6dd;
   color: black;
   padding: 3rem;
   font-size: 1.6rem;
@@ -168,11 +168,12 @@ html {
 
 /* BACK BUTTON */
 
-.back-btn-container {
+.btn-container {
   grid-column-start: 1;
   grid-column-end: 13;
-  grid-row-start: 365;
-  grid-row-end: 375;
+  grid-row-start: 370;
+  grid-row-end: 380;
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -199,4 +200,18 @@ html {
   transform: scale(1.04);
   box-shadow: 5px 10px 15px #051937;
   background-color: #008793;
+}
+
+.button-up {
+  position: absolute;
+  top: 0;
+  right: 15rem;
+  font-size: 5rem;
+  color: white;
+  transition: 0.2s ease-in-out;
+}
+
+.button-up:hover {
+  transform: translateY(-1rem);
+  cursor: pointer;
 }

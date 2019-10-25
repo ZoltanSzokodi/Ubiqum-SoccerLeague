@@ -68,6 +68,11 @@ html {
   font-size: 2rem;
 }
 
+.navbar-logo a {
+  text-decoration: none;
+  color: inherit;
+}
+
 /* NAVBAR HAMBURGER ANIMATION */
 
 .menu li a {
@@ -348,15 +353,16 @@ html {
 }
 
 .about-text-container {
-  position: relative;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-around;
   height: 30rem;
   width: 100%;
   transform: rotate(-3deg);
-  margin-top: 3rem;
+  margin-top: 10rem;
 }
 
 .about-text_typography {
-  position: absolute;
   font-size: 1.6rem;
   width: 25%;
   padding: 0 3rem 3rem;
@@ -372,21 +378,6 @@ html {
   padding: 1rem;
   display: inline-block;
   transform: translateY(-2rem);
-}
-
-.about-text_vision {
-  top: 25%;
-  left: 5%;
-}
-
-.about-text_mission {
-  top: 20%;
-  left: 35%;
-}
-
-.about-text_info {
-  top: 15%;
-  left: 65%;
 }
 
 .about-cards-container {
@@ -421,30 +412,22 @@ html {
   box-shadow: 5px 10px 15px #051937;
 }
 
-.about-card-image_1 {
+.about-card-image {
   height: 25rem;
-  background-image: url(../img/Youth-Soccer.jpg);
   background-size: cover;
   filter: opacity(80%);
+}
+
+.about-card-image_1 {
+  background-image: url(../img/Youth-Soccer.jpg);
 }
 
 .about-card-image_2 {
-  height: 25rem;
   background-image: url(../img/rules.jpg);
-  background-size: cover;
-  filter: opacity(80%);
 }
 
 .about-card-image_3 {
-  height: 25rem;
   background-image: url(../img/register.jpg);
-  background-size: cover;
-  filter: opacity(80%);
-}
-
-.about-card h3 {
-  padding: 2rem;
-  font-size: 1.6rem;
 }
 
 .about-card h3 {
@@ -487,7 +470,7 @@ html {
 .contact-container {
   grid-column-start: 1;
   grid-column-end: 13;
-  grid-row-start: 261;
+  grid-row-start: 266;
   grid-row-end: 386;
   background-image: linear-gradient(to right bottom, #051937, #004d7a, #008793, #00bf72, #a8eb12);
   display: flex;
@@ -585,4 +568,239 @@ html {
 .contact-social-media {
   margin-top: 2rem;
   font-size: 3rem;
+}
+
+/* MEDIAQUERIES < 1400px */
+
+@media (max-width: 1400px) {
+  /* SHOWCASE MQ */
+  .showcase {
+    grid-row-end: 101;
+    clip-path: polygon(0 0, 100% 0, 100% 90vh, 0 100%);
+  }
+  .showcase-logo {
+    height: 18rem;
+  }
+  .showcase-title {
+    left: 25%;
+    width: 70rem;
+  }
+  .showcase-title h1 {
+    letter-spacing: 0.5rem;
+    line-height: 4.5rem;
+    font-size: 4rem;
+  }
+  .showcase-quote {
+    top: 44%;
+    padding: 1.5rem;
+    font-size: 1.8rem;
+  }
+  /* ABOUT MQ */
+  .about-container {
+    grid-row-start: 85;
+    grid-row-end: 241;
+  }
+  .about-title {
+    padding: 2rem;
+  }
+  .about-title h2 {
+    letter-spacing: 0.5rem;
+    line-height: 4.5rem;
+    font-size: 4rem;
+  }
+  .about-text-container {
+    margin-top: 5rem;
+  }
+  .about-text_typography {
+    font-size: 1.5rem;
+    width: 30%;
+    margin: 0;
+  }
+  .about-cards-container {
+    width: 100%;
+    padding: 0;
+  }
+  .about-card {
+    margin: 0;
+  }
+  /* CONTACT MQ */
+  .contact-container {
+    grid-row-start: 225;
+    grid-row-end: 390;
+    clip-path: polygon(0% 5%, 100% 0%, 100% 0%, 100% 100%, 0% 100%, 0% 75%);
+  }
+  .contact-title {
+    padding: 2rem;
+  }
+  .contact-title h2 {
+    letter-spacing: 0.5rem;
+    line-height: 4.5rem;
+    font-size: 4rem;
+  }
+  .contact {
+    width: 50%;
+    padding: 3rem 6rem;
+    font-size: 1.4rem;
+  }
+}
+
+/* MEDIA QUERIES < 1100px */
+
+@media (max-width: 1100px) {
+  .showcase {
+    grid-row-end: 91;
+    clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+  }
+  .showcase-logo {
+    height: 15rem;
+  }
+  .showcase-title {
+    left: 25%;
+    width: 60rem;
+  }
+  .showcase-title h1 {
+    font-size: 3.7rem;
+  }
+  .showcase-quote {
+    top: 50%;
+    padding: 1rem;
+    font-size: 1.5rem;
+    width: 40rem;
+  }
+  .about-container {
+    grid-row-start: 70;
+    grid-row-end: 330;
+  }
+  .about-text-container {
+    margin-top: 5rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: auto;
+  }
+  .about-text_typography {
+    font-size: 1.5rem;
+    width: 70%;
+    margin: 2rem;
+  }
+  .about-cards-container {
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 0 10rem;
+    padding: 0rem;
+  }
+  .about-card {
+    width: 70%;
+  }
+  .about-card h3 {
+    padding: 1rem;
+    font-size: 1.6rem;
+  }
+  .about-card-text-container {
+    display: none;
+  }
+  .about-card-button {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+  }
+  .contact-container {
+    grid-row-start: 315;
+    grid-row-end: 461;
+    clip-path: polygon(0% 5%, 100% 0%, 100% 0%, 100% 100%, 0% 100%, 0% 75%);
+  }
+  .contact-title {
+    padding: 1.5rem;
+  }
+  .contact {
+    width: 70%;
+    padding: 3rem 6rem;
+    font-size: 1.4rem;
+  }
+  .contact__shape {
+    width: 12rem;
+    height: 12rem;
+  }
+  .contact__caption {
+    font-size: 1.4rem;
+  }
+}
+
+/* MEDIA QUERIES < 900px */
+
+@media (max-width: 900px) {
+  .showcase {
+    grid-row-end: 91;
+    background-image: url(../img/register.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  .showcase-logo {
+    height: 10rem;
+  }
+  .showcase-title {
+    top: 20%;
+    width: 40rem;
+    padding: 1rem;
+  }
+  .showcase-title h1 {
+    font-size: 2.8rem;
+  }
+  .showcase-quote {
+    top: 34%;
+    font-size: 1.3rem;
+  }
+  .about-container {
+    grid-row-start: 60;
+    grid-row-end: 320;
+    z-index: 10;
+  }
+  .about-title {
+    margin: 0;
+    padding: 1rem;
+  }
+  .about-title h2 {
+    font-size: 3rem;
+  }
+  .about-text_typography {
+    font-size: 1.3rem;
+    width: 85%;
+  }
+  .about-cards-container {
+    justify-content: flex-start;
+    width: 70%;
+  }
+  .about-card {
+    margin-top: 5rem;
+    width: 85%;
+    height: 30%;
+  }
+  .about-card h3 {
+    font-size: 1.4rem;
+  }
+  .about-card-button {
+    font-size: 1.2rem;
+    width: 15rem;
+    margin-bottom: 2rem;
+  }
+  .contact-container {
+    grid-row-start: 310;
+    grid-row-end: 461;
+    z-index: 20;
+  }
+  .contact-title {
+    padding: 1rem;
+  }
+  .contact {
+    width: 70%;
+    padding: 3rem 6rem;
+    font-size: 1.4rem;
+  }
+  .contact__shape {
+    width: 12rem;
+    height: 12rem;
+  }
+  .contact__caption {
+    font-size: 1.4rem;
+  }
 }

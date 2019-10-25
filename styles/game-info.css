@@ -2,11 +2,18 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 html {
   font-size: 62.5%;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 0px; /* Remove scrollbar space */
+  background: transparent; /* Optional: just make scrollbar invisible */
 }
 
 .content-wrapper {
@@ -33,24 +40,24 @@ html {
   height: 100%;
   border-collapse: collapse;
 }
-.tg td{
-  font-family:Arial, sans-serif;
+.tg td {
+  font-family: Arial, sans-serif;
   font-size: 1.4rem;
-  padding: 1rem .5rem;
+  padding: 1rem 0.5rem;
   overflow: hidden;
   word-break: normal;
-  background-color:#E0FFEB;
+  background-color: #e0ffeb;
 }
-.tg th{
-  font-family: 'Lobster', cursive;
+.tg th {
+  font-family: "Lobster", cursive;
   font-size: 3.5rem;
   color: white;
-  padding: 1rem .5rem;
+  padding: 1rem 0.5rem;
   overflow: hidden;
   word-break: normal;
   background-color: #008793;
 }
-.tg .tg-peda{
+.tg .tg-peda {
   background-color: #00bf72;
   font-size: 2rem;
   font-weight: bold;
@@ -58,7 +65,7 @@ html {
   text-align: left;
   vertical-align: center;
 }
-.tg .tg-nx8p{
+.tg .tg-nx8p {
   font-size: 2rem;
   font-weight: bold;
   text-align: left;
@@ -74,15 +81,15 @@ html {
   grid-row-end: 104;
   align-items: center;
   padding: 2.5rem;
-  background-color: #0D0D0D;
+  background-color: #0d0d0d;
   opacity: 0.9;
   transform: rotate(-2deg);
   color: white;
 }
 
 .location-title h2 {
-  font-family: 'Bangers', cursive;
-  letter-spacing: .7rem;
+  font-family: "Bangers", cursive;
+  letter-spacing: 0.7rem;
   line-height: 5.5rem;
   font-size: 5rem;
   text-align: center;
@@ -99,7 +106,7 @@ html {
 
 .location h3 {
   position: absolute;
-  background-color:#0D0D0D;
+  background-color: #0d0d0d;
   color: white;
   padding: 1rem;
   display: inline-block;
@@ -139,11 +146,12 @@ html {
 
 /* BACK BUTTON */
 
-.back-btn-container {
+.btn-container {
   grid-column-start: 1;
   grid-column-end: 13;
   grid-row-start: 350;
   grid-row-end: 360;
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -165,10 +173,25 @@ html {
   font-weight: bold;
   box-shadow: 5px 10px 10px #051937;
   transition: 0.2s ease-in-out;
+  cursor: pointer;
 }
 
 .button-back:hover {
   transform: scale(1.04);
   box-shadow: 5px 10px 15px #051937;
   background-color: #008793;
+}
+
+.button-up {
+  position: absolute;
+  top: 0;
+  right: 15rem;
+  font-size: 5rem;
+  color: white;
+  transition: 0.2s ease-in-out;
+}
+
+.button-up:hover {
+  transform: translateY(-1rem);
+  cursor: pointer;
 }
