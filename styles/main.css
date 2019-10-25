@@ -804,3 +804,77 @@ html {
     font-size: 1.4rem;
   }
 }
+
+/* MEDIA QUERIES iPhone X */
+@media (max-width: 376px) {
+  html {
+    font-size: 50%;
+  }
+
+  .navbar {
+    height: 6vh;
+    font-size: 1.3rem;
+  }
+
+  .showcase {
+    grid-row-end: 91;
+    background: url(../img/register.jpg) top no-repeat;
+    background-size: 150%;
+  }
+  .showcase-logo {
+    height: 8rem;
+  }
+  .showcase-title {
+    display: none;
+  }
+  .showcase-quote {
+    display: none;
+  }
+
+  .about-container {
+    grid-row-start: 40;
+    grid-row-end: 250;
+    z-index: 1;
+  }
+  .about-title {
+    padding: 0rem;
+    width: 70%;
+  }
+  .about-title h2 {
+    font-size: 2.5rem;
+  }
+  .about-text_typography {
+    width: 80%;
+  }
+  .about-cards-container {
+    justify-content: flex-start;
+    width: 100%;
+  }
+  .about-card {
+    margin-top: 5rem;
+    width: 85%;
+    height: auto;
+  }
+
+  .contact-container {
+    grid-row-start: 237;
+    grid-row-end: 386;
+    z-index: 20;
+    clip-path: polygon(0% 2%, 100% 0%, 100% 0%, 100% 100%, 0% 100%, 0% 75%);
+  }
+  .contact-title h2 {
+    font-size: 2.5rem;
+  }
+  .contact {
+    width: 70%;
+    padding: 3rem 6rem;
+    font-size: 1.4rem;
+  }
+  .contact__shape {
+    width: 12rem;
+    height: 12rem;
+  }
+  .contact__caption {
+    font-size: 1.4rem;
+  }
+}
