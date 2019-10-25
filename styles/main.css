@@ -4,7 +4,6 @@
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
 }
-
 html {
   font-size: 62.5%;
   overflow: scroll;
@@ -15,14 +14,12 @@ html {
   width: 0px; /* Remove scrollbar space */
   background: transparent; /* Optional: just make scrollbar invisible */
 }
-
 .content-wrapper {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-auto-rows: 1vh;
   grid-gap: 0;
 }
-
 .navbar {
   position: fixed; /* Set the navbar to fixed position */
   top: 0; /* Position the navbar at the top of the page */
@@ -40,7 +37,6 @@ html {
   opacity: 0.9;
   z-index: 10;
 }
-
 .navbar-logo {
   display: flex;
   align-items: center;
@@ -49,17 +45,14 @@ html {
   padding-right: 2rem;
   font-family: "Lobster", cursive;
 }
-
 .navbar-logo p {
   font-size: 2rem;
   font-family: inherit;
   margin-right: 1.5rem;
 }
-
 .navbar-logo i {
   font-size: 2rem;
 }
-
 .navbar-logo span {
   padding-right: 1.5rem;
   margin: 1.5rem;
@@ -67,20 +60,17 @@ html {
   font-weight: bold;
   font-size: 2rem;
 }
-
 .navbar-logo a {
   text-decoration: none;
   color: inherit;
 }
 
 /* NAVBAR HAMBURGER ANIMATION */
-
 .menu li a {
   text-decoration: none;
   font-family: inherit;
   color: #0d0d0d;
 }
-
 .outer-menu .checkbox-toggle {
   position: absolute;
   top: 0;
@@ -242,7 +232,6 @@ html {
 }
 
 /* SHOWCASE */
-
 .showcase {
   grid-column-start: 1;
   grid-column-end: 13;
@@ -255,11 +244,9 @@ html {
   transition: 0.5s ease-in-out;
   clip-path: polygon(0 0, 100% 0, 100% 105vh, 0 100%);
 }
-
 .showcase:hover {
   filter: contrast(130%);
 }
-
 .showcase-logo {
   position: absolute;
   top: 15%;
@@ -267,15 +254,12 @@ html {
   height: 20rem;
   transition: 2s;
 }
-
 .showcase-logo:hover {
   transform: rotate(720deg);
 }
-
 .showcase-logo img {
   height: 100%;
 }
-
 .showcase-title {
   position: absolute;
   top: 28%;
@@ -290,7 +274,6 @@ html {
   opacity: 0.7;
   transform: rotate(-5deg);
 }
-
 .showcase-title h1 {
   font-family: "Bangers", cursive;
   letter-spacing: 0.7rem;
@@ -298,7 +281,6 @@ html {
   font-size: 5rem;
   text-align: center;
 }
-
 .showcase-quote {
   position: absolute;
   top: 47%;
@@ -313,7 +295,6 @@ html {
   opacity: 0.9;
   transform: rotate(-1deg);
 }
-
 .showcase-quote span {
   font-weight: bold;
   font-size: 1.5rem;
@@ -322,7 +303,6 @@ html {
 }
 
 /* ABOUT SECTION */
-
 .about-container {
   grid-column-start: 1;
   grid-column-end: 13;
@@ -333,7 +313,6 @@ html {
   flex-direction: column;
   align-items: center;
 }
-
 .about-title {
   margin-top: 6rem;
   align-items: center;
@@ -343,7 +322,6 @@ html {
   transform: rotate(-2deg);
   color: white;
 }
-
 .about-title h2 {
   font-family: "Bangers", cursive;
   letter-spacing: 0.7rem;
@@ -351,7 +329,6 @@ html {
   font-size: 5rem;
   text-align: center;
 }
-
 .about-text-container {
   display: flex;
   align-items: baseline;
@@ -361,7 +338,6 @@ html {
   transform: rotate(-3deg);
   margin-top: 10rem;
 }
-
 .about-text_typography {
   font-size: 1.6rem;
   width: 25%;
@@ -371,7 +347,6 @@ html {
   box-shadow: 5px 10px 10px #051937;
   background-color: white;
 }
-
 .about-text_typography h3 {
   background-color: #0d0d0d;
   color: white;
@@ -379,7 +354,6 @@ html {
   display: inline-block;
   transform: translateY(-2rem);
 }
-
 .about-cards-container {
   width: 90%;
   height: auto;
@@ -387,7 +361,6 @@ html {
   justify-content: space-around;
   padding: 8rem 5rem 2rem;
 }
-
 .about-card {
   display: flex;
   flex-direction: column;
@@ -406,35 +379,28 @@ html {
   border-top-right-radius: 0.2rem;
   border-top-left-radius: 0.2rem;
 }
-
 .about-card:hover {
   transform: scale(1.015);
   box-shadow: 5px 10px 15px #051937;
 }
-
 .about-card-image {
   height: 25rem;
   background-size: cover;
   filter: opacity(80%);
 }
-
 .about-card-image_1 {
   background-image: url(../img/Youth-Soccer.jpg);
 }
-
 .about-card-image_2 {
   background-image: url(../img/rules.jpg);
 }
-
 .about-card-image_3 {
   background-image: url(../img/register.jpg);
 }
-
 .about-card h3 {
   padding: 2rem;
   font-size: 2rem;
 }
-
 .about-card-text-container {
   font-size: 1.4rem;
   padding: 0 3rem 3rem;
@@ -443,7 +409,6 @@ html {
   align-self: center;
   text-decoration: none;
 }
-
 .about-card-button {
   display: flex;
   align-items: center;
@@ -460,13 +425,11 @@ html {
   border-radius: 1rem;
   transition: 0.2s ease-in-out;
 }
-
 .about-card-button:hover {
   color: #008793;
 }
 
 /* CONTACT SECTION */
-
 .contact-container {
   grid-column-start: 1;
   grid-column-end: 13;
@@ -479,7 +442,6 @@ html {
   align-items: center;
   clip-path: polygon(0% 12%, 100% 0%, 100% 0%, 100% 100%, 0% 100%, 0% 75%);
 }
-
 .contact-title {
   margin-top: 8rem;
   align-items: center;
@@ -489,7 +451,6 @@ html {
   opacity: 0.9;
   transform: rotate(-2deg);
 }
-
 .contact-title h2 {
   font-family: "Bangers", cursive;
   letter-spacing: 0.7rem;
@@ -497,7 +458,6 @@ html {
   font-size: 5rem;
   text-align: center;
 }
-
 .contact-details {
   margin-top: 2rem;
   display: flex;
@@ -508,7 +468,6 @@ html {
 }
 
 /* CONTACT CARDS */
-
 .contact {
   width: 40%;
   margin: 0 auto;
@@ -520,7 +479,6 @@ html {
   font-size: 1.5rem;
   transform: skewX(-12deg);
 }
-
 .contact__shape {
   width: 15rem;
   height: 15rem;
@@ -534,7 +492,6 @@ html {
   overflow: hidden;
   border-radius: 50%;
 }
-
 .contact__img {
   height: 100%;
   transition: all 0.5s;
@@ -564,7 +521,6 @@ html {
   transform: scale(1.1);
   filter: blur(3px) brightness(80%);
 }
-
 .contact-social-media {
   margin-top: 2rem;
   font-size: 3rem;
