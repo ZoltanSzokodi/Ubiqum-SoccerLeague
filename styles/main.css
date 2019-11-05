@@ -359,7 +359,7 @@ html {
   height: auto;
   display: flex;
   justify-content: space-around;
-  padding: 8rem 5rem 2rem;
+  padding: 4rem 5rem 2rem;
 }
 .about-card {
   display: flex;
