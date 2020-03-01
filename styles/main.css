@@ -238,14 +238,20 @@ html {
   grid-row-start: 1;
   grid-row-end: 121;
   position: relative;
-  background-image: url(../img/showcase.jpg);
+  /* background-image: url(../img/showcase.jpg);
   background-size: cover;
-  filter: contrast(100%);
+  filter: contrast(100%); */
   transition: 0.5s ease-in-out;
   clip-path: polygon(0 0, 100% 0, 100% 105vh, 0 100%);
+  overflow: hidden;
 }
 .showcase:hover {
-  filter: contrast(130%);
+  /* filter: contrast(130%); */
+}
+.showcase-img {
+  width: auto;
+  height: 100%;
+  transform: translateX(-5%);
 }
 .showcase-logo {
   position: absolute;
@@ -690,6 +696,9 @@ html {
     background-image: url(../img/register.jpg);
     background-size: contain;
     background-repeat: no-repeat;
+  }
+  .showcase-img {
+    /* visibility: hidden; */
   }
   .showcase-logo {
     height: 10rem;
